@@ -1,6 +1,6 @@
 import { colors } from "../../theme/colors";
 import { AppIcon } from "../UI/AppIcon/AppIcon";
-import { StyledServiceElem } from "./ServiceElem.style";
+import { SCServiceElem } from "./ServiceElem.style";
 
 interface IServiceElemProps {
   serviceTitle: string;
@@ -12,7 +12,7 @@ export const ServiceElem = ({
   serviceIcon,
 }: IServiceElemProps) => {
   return (
-    <StyledServiceElem>
+    <SCServiceElem>
       <AppIcon
         name={serviceIcon}
         fill={colors.primeColor}
@@ -20,6 +20,6 @@ export const ServiceElem = ({
         width="42"
       />
       <p>{serviceTitle}</p>
-    </StyledServiceElem>
+    </SCServiceElem>
   );
 };

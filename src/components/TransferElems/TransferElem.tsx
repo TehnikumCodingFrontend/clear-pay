@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledTransferElem } from "./TransfersElems.style";
+import { SCTransferElem } from "./TransfersElems.style";
 import { AppInput } from "../UI/AppInput/AppInput";
 
 interface ITransferElemProps {
@@ -8,7 +8,7 @@ interface ITransferElemProps {
 
 export const TransferElem = ({ transferType }: ITransferElemProps) => {
   return (
-    <StyledTransferElem>
+    <SCTransferElem>
       <h3>{transferType}</h3>
       <p>Номер карты</p>
       <AppInput placeholder="Номер карты" iconName="card" />
@@ -22,6 +22,6 @@ export const TransferElem = ({ transferType }: ITransferElemProps) => {
           <AppInput placeholder="Название карты" iconName="edit" />
         </div>
       </div>
-    </StyledTransferElem>
+    </SCTransferElem>
   );
 };

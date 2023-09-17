@@ -5,7 +5,7 @@ interface IStyledLinkProps {
   align?: "right" | "left";
 }
 
-export const StyledLink = styled.div<IStyledLinkProps>`
+export const SCLink = styled.div<IStyledLinkProps>`
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 7px;

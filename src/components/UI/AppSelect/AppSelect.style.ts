@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSelect = styled.select`
+export const SCSelect = styled.select`
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 10px;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 const borderRadius = "12px";
 const skew = "-12deg";
 
-export const StyledCard = styled.div`
+export const SCCard = styled.div`
   background-color: ${(props) => props.theme.colors.primeColor};
   height: 50px;
   width: 40px;
@@ -46,7 +46,7 @@ export const StyledCard = styled.div`
   }
 `;
 
-export const StyledWyreCard = styled.div`
+export const SCWyreCard = styled.div`
   position: fixed;
   width: 120px;
   height: 120px;

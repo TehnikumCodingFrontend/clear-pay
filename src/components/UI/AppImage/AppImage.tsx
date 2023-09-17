@@ -1,9 +1,9 @@
-import { StyledImg } from "./AppImage.style";
+import { SCImg } from "./AppImage.style";
 
 interface IAppImageProps {
   imgSrc?: string | undefined;
   userInitials?: string | undefined;
-  imgAlt: string;
+  imgAlt?: string;
   className?: string;
   width?: string;
   height?: string;
@@ -13,24 +13,26 @@ interface IAppImageProps {
 export const AppImage = ({
   imgSrc,
   imgAlt,
-  className,
+  className = "AppImage",
   userInitials,
-  width = "50",
-  height = "50",
+  width,
+  height,
   borderRadius,
 }: IAppImageProps) => {
   return (
-    <StyledImg
+    <SCImg
       width={width}
       height={height}
       $borderRadius={borderRadius}
-      className="AppImage"
+      className={className}
     >
       {imgSrc ? (
         <img className="userImage" src={`./img/${imgSrc}`} alt={imgAlt} />
       ) : (
-        <div className="userImage">{userInitials}</div>
+        <div className="userImage">
+          <span>{userInitials}</span>
+        </div>
       )}
-    </StyledImg>
+    </SCImg>
   );
 };

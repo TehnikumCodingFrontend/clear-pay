@@ -3,7 +3,7 @@ import { AppInputSelect } from "../UI/AppInputSelect/AppInputSelect";
 import { calculatorData } from "./Conversation.data";
 import {
   CalculatorWrapper,
-  StyledExchangeCalculator,
+  SCExchangeCalculator,
 } from "./ConvertionElems.style";
 
 interface IExchangeCalculatorProps {}
@@ -12,7 +12,7 @@ export const ExchangeCalculator = ({}: IExchangeCalculatorProps) => {
   return (
     <CalculatorWrapper>
       <h1>Калькулятор</h1>
-      <StyledExchangeCalculator>
+      <SCExchangeCalculator>
         <div className="wannaSell">
           <h5>Хочу продать</h5>
           <AppInputSelect variants={calculatorData} />
@@ -21,7 +21,7 @@ export const ExchangeCalculator = ({}: IExchangeCalculatorProps) => {
           <h5>Получу</h5>
           <AppInputSelect variants={calculatorData} />
         </div>
-      </StyledExchangeCalculator>
+      </SCExchangeCalculator>
       <AppButton buttonLabel="Рассчитать" isDisabled={false} />
     </CalculatorWrapper>
   );

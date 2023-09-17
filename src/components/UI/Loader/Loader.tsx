@@ -1,11 +1,11 @@
-import { StyledCard, StyledWyreCard } from "./Loader.style";
+import { SCCard, SCWyreCard } from "./Loader.style";
 
 export const Loader = () => {
   return (
-    <StyledWyreCard>
-      <StyledCard />
-      <StyledCard />
-      <StyledCard />
-    </StyledWyreCard>
+    <SCWyreCard>
+      <SCCard />
+      <SCCard />
+      <SCCard />
+    </SCWyreCard>
   );
 };

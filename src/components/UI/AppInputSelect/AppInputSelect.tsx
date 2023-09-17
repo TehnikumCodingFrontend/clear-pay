@@ -1,6 +1,6 @@
 import { AppInput } from "../AppInput/AppInput";
 import { AppSelect } from "../AppSelect/AppSelect";
-import { StyledInputSelect } from "./AppInputSelect.style";
+import { SCInputSelect } from "./AppInputSelect.style";
 
 interface IAppInputSelectProps {
   variants: any[];
@@ -8,10 +8,10 @@ interface IAppInputSelectProps {
 
 export const AppInputSelect = ({ variants }: IAppInputSelectProps) => {
   return (
-    <StyledInputSelect>
+    <SCInputSelect>
       <AppInput />
       <div className="divider"></div>
       <AppSelect variants={variants} />
-    </StyledInputSelect>
+    </SCInputSelect>
   );
 };

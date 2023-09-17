@@ -1,6 +1,6 @@
 import { AppElem } from "../AppElem/AppElem";
 import { AppLink } from "../UI/AppLink/AppLink";
-import { RateWrapper, StyledExchangeRate } from "./ConvertionElems.style";
+import { RateWrapper, SCExchangeRate } from "./ConvertionElems.style";
 import { exchangeRateData } from "./Conversation.data";
 
 interface IExchangeRateProps {}
@@ -9,7 +9,7 @@ export const ExchangeRate = ({}: IExchangeRateProps) => {
   return (
     <RateWrapper>
       <h1>Курс валют</h1>
-      <StyledExchangeRate>
+      <SCExchangeRate>
         <div className="table">
           <div className="line">
             <h5>Валюта</h5>
@@ -33,7 +33,7 @@ export const ExchangeRate = ({}: IExchangeRateProps) => {
           ))}
         </div>
         <AppLink linkLabel="Показать другие валюты" hasIcon />
-      </StyledExchangeRate>
+      </SCExchangeRate>
     </RateWrapper>
   );
 };

@@ -1,5 +1,8 @@
 import React from "react";
-import { StyledRecentTransfers } from "./TransfersElems.style";
+import {
+  SCRecentElem,
+  SCRecentTransfers,
+} from "./TransfersElems.style";
 import { AppElem } from "../AppElem/AppElem";
 import { AppIcon } from "../UI/AppIcon/AppIcon";
 import { colors } from "../../theme/colors";
@@ -10,10 +13,10 @@ interface IRecentTransfersProps {}
 
 export const RecentTransfers = ({}: IRecentTransfersProps) => {
   return (
-    <StyledRecentTransfers>
+    <SCRecentTransfers>
       <h3>Последние переводы</h3>
       {transfersData.map((transfer) => (
-        <div key={transfer.name} className="RecentElem">
+        <SCRecentElem key={transfer.name}>
           <AppElem elemName={transfer.name} elemStatus={transfer.number} />
           <div className="date">
             <div className="descriptionElem">
@@ -22,10 +25,10 @@ export const RecentTransfers = ({}: IRecentTransfersProps) => {
             </div>
             <AppIcon name="transfers-modern" fill={colors.primeColor} />
           </div>
-        </div>
+        </SCRecentElem>
       ))}
 
       <AppLink hasIcon linkLabel="Показать еще" />
-    </StyledRecentTransfers>
+    </SCRecentTransfers>
   );
 };

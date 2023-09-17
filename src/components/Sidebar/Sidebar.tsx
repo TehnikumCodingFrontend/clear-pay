@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { AppIcon } from "../UI/AppIcon/AppIcon";
-import { StyledSidebar } from "./Sidebar.style";
+import { SCSidebar } from "./Sidebar.style";
 import { ISidebarDataItem } from "./Sidebar.data";
 
 interface ISidebarProps {
@@ -11,7 +11,7 @@ export const Sidebar = ({ links }: ISidebarProps) => {
   const location = useLocation();
 
   return (
-    <StyledSidebar>
+    <SCSidebar>
       <AppIcon
         className="logo"
         name="clear-pay-logo"
@@ -26,7 +26,6 @@ export const Sidebar = ({ links }: ISidebarProps) => {
         height="36"
         fill="white"
       />
-
       <ul>
         {links.map((route) => (
           <li title={route.title} key={route.title}>
@@ -40,6 +39,6 @@ export const Sidebar = ({ links }: ISidebarProps) => {
           </li>
         ))}
       </ul>
-    </StyledSidebar>
+    </SCSidebar>
   );
 };

@@ -1,18 +1,16 @@
 import { AppElem } from "../AppElem/AppElem";
 import { userData } from "./ProfileElems.data";
-import { StyledUserBio } from "./ProfileElems.style";
+import { SCUserBio } from "./ProfileElems.style";
 
 interface IUserBioProps {}
 
 export const UserBio = ({}: IUserBioProps) => {
   return (
-    <StyledUserBio>
+    <SCUserBio>
       <AppElem
         elemName={`${userData.name} ${userData.surname}`}
         elemImg={userData.img}
         elemStatus={userData.status}
-        imgHeight="126"
-        imgWidth="126"
       />
       <div className="userBio">
         <div className="userInfo">
@@ -36,6 +34,6 @@ export const UserBio = ({}: IUserBioProps) => {
           <p className="value">{userData.country}</p>
         </div>
       </div>
-    </StyledUserBio>
+    </SCUserBio>
   );
 };

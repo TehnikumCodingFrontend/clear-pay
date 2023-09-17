@@ -17,3 +17,22 @@ export const userData: IUserData = {
   country: "Узбекистан",
   img: "users/usachev.jpeg",
 };
+
+export const statisticsData = [
+  {
+    count: 30,
+    description: "Переводов на карту",
+  },
+  {
+    count: 17,
+    description: "Конверсий валют",
+  },
+  {
+    count: 23,
+    description: "Зачисления на карту",
+  },
+  {
+    count: 12,
+    description: "Проведенных платежей",
+  },
+];

@@ -1,13 +1,13 @@
 import { AppButton } from "../UI/AppButton/AppButton";
 import { AppInput } from "../UI/AppInput/AppInput";
 import { AppLink } from "../UI/AppLink/AppLink";
-import { StyledTransferBlock } from "./TransfersElems.style";
+import { SCTransferBlock } from "./TransfersElems.style";
 
 interface ITransferBlockProps {}
 
 export const TransferBlock = ({}: ITransferBlockProps) => {
   return (
-    <StyledTransferBlock>
+    <SCTransferBlock>
       <div className="transferPart transferIn">
         <h3>Счет списания</h3>
         <AppInput
@@ -29,6 +29,6 @@ export const TransferBlock = ({}: ITransferBlockProps) => {
         <AppLink align="right" linkLabel="Выбрать по номеру телефона" />
       </div>
       <AppButton buttonLabel="Перевести" isDisabled={false} />
-    </StyledTransferBlock>
+    </SCTransferBlock>
   );
 };

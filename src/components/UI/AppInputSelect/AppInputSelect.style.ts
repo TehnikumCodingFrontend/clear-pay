@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledInputSelect = styled.div`
+export const SCInputSelect = styled.div`
   position: relative;
 
   input {

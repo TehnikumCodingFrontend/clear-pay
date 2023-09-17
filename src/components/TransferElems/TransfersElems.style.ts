@@ -1,39 +1,40 @@
 import styled from "styled-components";
-import { AppWidgetsStyles } from "../../theme/globalStyle";
+import { SCAppWidget } from "../../theme/globalStyle";
 
-export const StyledRecentTransfers = styled.div`
-  ${AppWidgetsStyles}
-
+export const SCRecentTransfers = styled(SCAppWidget)`
   flex: 1 1 auto;
+`;
 
-  .RecentElem {
-    padding: 25px 35px;
-    background-color: ${(props) => props.theme.colors.bgc};
-    border-radius: 10px;
+export const SCRecentElem = styled.div`
+  padding: 25px 35px;
+  background-color: ${(props) => props.theme.colors.bgc};
+  border-radius: 10px;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .date {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    column-gap: calc(0.8vw + 5.2px); //? 20 | 8
 
-    &:not(:last-child) {
-      margin-bottom: 20px;
+    p {
+      text-align: right;
     }
+  }
 
-    .date {
-      display: flex;
-      align-items: center;
-      column-gap: calc(0.8vw + 5.2px); //? 20 | 8
-
-      p {
-        text-align: right;
-      }
-    }
+  .AppImage {
+    height: calc(1vw + 30.3px); //? 50 | 34
+    width: calc(1vw + 30.3px); //? 50 | 34
   }
 `;
 
-export const StyledTransferBlock = styled.div`
-  ${AppWidgetsStyles}
-
+export const SCTransferBlock = styled(SCAppWidget)`
   flex: 0 1 40%;
 
   .inputWrapper {
@@ -47,9 +48,7 @@ export const StyledTransferBlock = styled.div`
   }
 `;
 
-export const StyledTransferElem = styled.div`
-  ${AppWidgetsStyles}
-
+export const SCTransferElem = styled(SCAppWidget)`
   flex: 1 1 40%;
 
   p {
@@ -71,9 +70,7 @@ export const StyledTransferElem = styled.div`
   }
 `;
 
-export const StyledEnrollment = styled.div`
-  ${AppWidgetsStyles}
-
+export const SCEnrollment = styled(SCAppWidget)`
   flex: 1 1 20%;
 
   display: flex;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledHeader = styled.header`
+export const SCHeader = styled.header`
   flex: 0 1 auto;
 
   background-color: ${(props) => props.theme.colors.white};
@@ -23,7 +23,17 @@ export const AppSettings = styled.div`
   gap: 30px;
   align-items: center;
 
-  .AppImage {
-    flex: 1 0 22px;
+  .languageSelect {
+    .AppImage {
+      flex: 0 0 22px;
+      height: 22px;
+    }
+  }
+
+  .AppElem {
+    .AppImage {
+      height: calc(1vw + 30.3px);
+      width: calc(1vw + 30.3px);
+    }
   }
 `;

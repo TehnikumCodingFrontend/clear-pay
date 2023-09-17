@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import { AppWidgetsStyles } from "../../theme/globalStyle";
+import { SCAppWidget } from "../../theme/globalStyle";
 
-export const StyledServicePayments = styled.div`
-  ${AppWidgetsStyles}
-
+export const SCServicePayments = styled(SCAppWidget)`
   position: relative;
 
   .nextSlideBtn {

@@ -3,12 +3,12 @@ import { AppImage } from "../UI/AppImage/AppImage";
 import { AppInput } from "../UI/AppInput/AppInput";
 import { AppSelect } from "../UI/AppSelect/AppSelect";
 import { AppElem } from "../AppElem/AppElem";
-import { AppSettings, StyledHeader } from "./Header.style";
+import { AppSettings, SCHeader } from "./Header.style";
 import { colors } from "../../theme/colors";
 
 export const Header = () => {
   return (
-    <StyledHeader>
+    <SCHeader>
       <AppInput
         bgc="transparent"
         borderColor={colors.gray}
@@ -29,6 +29,6 @@ export const Header = () => {
         </div>
         <AppElem elemImg="users/usachev.jpeg" elemName="Дмитрий Усачев" />
       </AppSettings>
-    </StyledHeader>
+    </SCHeader>
   );
 };

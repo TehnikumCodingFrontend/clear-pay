@@ -1,13 +1,11 @@
 import styled from "styled-components";
-import { AppWidgetsStyles } from "../../theme/globalStyle";
+import { SCAppWidget } from "../../theme/globalStyle";
 
 export const RateWrapper = styled.div`
   flex: 1 1 auto;
 `;
 
-export const StyledExchangeRate = styled.div`
-  ${AppWidgetsStyles}
-
+export const SCExchangeRate = styled(SCAppWidget)`
   .table {
     margin-bottom: 30px;
   }
@@ -50,9 +48,7 @@ export const CalculatorWrapper = styled.div`
   }
 `;
 
-export const StyledExchangeCalculator = styled.div`
-  ${AppWidgetsStyles}
-
+export const SCExchangeCalculator = styled(SCAppWidget)`
   h5 {
     margin-bottom: 40px;
   }

@@ -1,4 +1,4 @@
-import { StyledSelect } from "./AppSelect.style";
+import { SCSelect } from "./AppSelect.style";
 
 interface IAppSelectProps {
   variants: Array<any>;
@@ -6,12 +6,12 @@ interface IAppSelectProps {
 
 export const AppSelect = ({ variants }: IAppSelectProps) => {
   return (
-    <StyledSelect name="appLanguage" id="appLanguage">
+    <SCSelect name="appLanguage" id="appLanguage">
       {variants.map((variant) => (
         <option key={variant.value} value={variant.value}>
           {variant.title}
         </option>
       ))}
-    </StyledSelect>
+    </SCSelect>
   );
 };

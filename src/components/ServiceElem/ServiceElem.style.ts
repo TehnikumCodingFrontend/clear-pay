@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledServiceElem = styled.div`
+export const SCServiceElem = styled.div`
   /* flex: 0 1 140px; */
 
   padding: 24px;

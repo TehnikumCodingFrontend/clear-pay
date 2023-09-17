@@ -1,4 +1,3 @@
-import { AppPage } from "../components/AppPage/AppPage.style";
 import { ExchangeCalculator } from "../components/ConvertionElems/ExchangeCalculator";
 import { ExchangeRate } from "../components/ConvertionElems/ExchangeRate";
 import { Enrollment } from "../components/TransferElems/Enrollment";
@@ -7,7 +6,7 @@ import { PageElemsWrapper } from "../theme/globalStyle";
 
 export const ConvertionPage = () => {
   return (
-    <AppPage>
+    <>
       <PageElemsWrapper>
         <ExchangeRate />
         <ExchangeCalculator />
@@ -18,6 +17,6 @@ export const ConvertionPage = () => {
         <TransferElem transferType="Счет зачисления" />
         <Enrollment />
       </PageElemsWrapper>
-    </AppPage>
+    </>
   );
 };

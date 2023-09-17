@@ -6,7 +6,8 @@ interface IStyledImgProps {
   $borderRadius?: string;
 }
 
-export const StyledImg = styled.div<IStyledImgProps>`
+export const SCImg = styled.div<IStyledImgProps>`
+  border: 1px solid ${(props) => props.theme.colors.lightGray};
   overflow: hidden;
 
   ${(props) =>
@@ -25,15 +26,19 @@ export const StyledImg = styled.div<IStyledImgProps>`
       height: ${props.height}px;
     `};
 
-  border: 1px solid ${(props) => props.theme.colors.lightGray};
-
   .userImage {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
     text-align: center;
     background-color: ${(props) => props.theme.colors.primeColor};
     color: white;
-    line-height: ${(props) => props.height}px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
+
+/* line-height: ${(props) => props.height}px; */

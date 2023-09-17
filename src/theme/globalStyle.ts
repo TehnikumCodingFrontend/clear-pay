@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components";
-import { colors } from "./colors";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -11,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: "Inter";
     color: ${(props) => props.theme.colors.mainTextColor};
-    background-color: ${(props) => props.theme.colors.bodyBgc};
+    background-color: ${(props) => props.theme.colors.footerBgc};
     font-size: 20px;
   }
 
@@ -76,10 +75,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const AppWidgetsStyles = `
+export const SCAppWidget = styled.div`
   border-radius: 16px;
-  background: ${colors.white};
-  box-shadow: 0px 3px 30px 0px ${colors.elemsShadowLight};
+  background: ${(props) => props.theme.colors.white};
+  box-shadow: 0px 3px 30px 0px ${(props) => props.theme.colors.elemsShadowLight};
   padding: calc(1vw + 26.5px) calc(1.6vw + 14.2px); //? 45 - 30 | 45 - 20
 `;
 
@@ -88,4 +87,8 @@ export const PageElemsWrapper = styled.div`
   gap: 32px;
   row-gap: 40px;
   margin-bottom: 32px;
+`;
+
+export const SCMainWrapper = styled.div`
+  background-color: ${(props) => props.theme.colors.bgc};
 `;

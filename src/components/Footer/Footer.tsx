@@ -1,18 +1,26 @@
 import { Link } from "react-router-dom";
+import { AppIcon } from "../UI/AppIcon/AppIcon";
 import { footerData } from "./Footer.data";
-import { FooterLinks, StyledFooter } from "./Footer.style";
+import { SCFooter } from "./Footer.style";
 
 export const Footer = () => {
   return (
-    <StyledFooter>
-      {/* <Icon
-        className="logo"
-        name="clear-pay-logo"
-        width="232"
-        height="45"
-        fill="white"
-      /> */}
-      <FooterLinks>
+    <SCFooter>
+      <div className="supportService">
+        <AppIcon
+          className="logo"
+          name="clear-pay-logo"
+          width="232"
+          height="45"
+          fill="white"
+        />
+        <div className="phoneNumbers">
+          <p className="linksHeading">Служба поддержки:</p>
+          <p>+998 911 456 456</p>
+          <p>+998 911 456 456</p>
+        </div>
+      </div>
+      <div className="footerLinks">
         {footerData.map((data) => {
           return (
             <div className="footerLink" key={data.title}>
@@ -25,7 +33,7 @@ export const Footer = () => {
             </div>
           );
         })}
-      </FooterLinks>
-    </StyledFooter>
+      </div>
+    </SCFooter>
   );
 };
