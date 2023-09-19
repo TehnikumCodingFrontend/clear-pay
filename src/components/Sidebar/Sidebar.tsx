@@ -20,7 +20,7 @@ export const Sidebar = ({ links }: ISidebarProps) => {
         fill="white"
       />
       <AppIcon
-        className="logo_small"
+        className="logo logo_small"
         name="clear-pay-logo_small"
         width="36"
         height="36"

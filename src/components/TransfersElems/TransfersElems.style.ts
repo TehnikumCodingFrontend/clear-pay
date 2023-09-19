@@ -58,10 +58,10 @@ export const SCTransferElem = styled(SCAppWidget)`
   .cardDetails {
     margin-top: 30px;
     display: flex;
-    gap: 30px;
+    gap: 20px;
 
     .validityPeriod {
-      flex: 0 1 40%;
+      flex: 1 1 45%;
     }
 
     .cardName {
@@ -76,6 +76,7 @@ export const SCEnrollment = styled(SCAppWidget)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 20px;
 
   p {
     /* margin-bottom: 20px; */
@@ -84,4 +85,47 @@ export const SCEnrollment = styled(SCAppWidget)`
   select {
     background-color: ${(props) => props.theme.colors.bgc};
   }
+`;
+
+export const SCServicePayments = styled(SCAppWidget)`
+  position: relative;
+
+  .nextSlideBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: calc(1.6vw + 14.2px);
+    translate: 0 -50%;
+    z-index: 10;
+    transition: 200ms;
+
+    &:hover {
+      filter: drop-shadow(0 0 10px ${(props) => props.theme.colors.primeColor});
+      scale: 1.1;
+    }
+
+    &:active {
+      scale: 0.9;
+    }
+  }
+`;
+
+export const SlidesWrapper = styled.div`
+  cursor: grab;
+  padding: 0 120px;
+`;
+
+export const SCServiceElem = styled.div`
+  padding: 24px;
+  border-radius: 10px;
+  background: ${(props) => props.theme.colors.white};
+  box-shadow: 0px 3px 30px 0px ${(props) => props.theme.colors.elemsShadowLight};
+  text-align: center;
+  color: ${(props) => props.theme.colors.primeColor};
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 `;

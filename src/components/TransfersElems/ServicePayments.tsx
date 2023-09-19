@@ -2,10 +2,10 @@
 
 import "swiper/css";
 import { SwiperSlide } from "swiper/react";
-import { ServiceElem } from "../ServiceElem/ServiceElem";
+import { ServiceElem } from "./ServiceElem";
 import { AppSwiper } from "../UI/AppSwiper/AppSwiper";
-import { servicePaymentsData } from "./ServicePayments.data";
-import { SCServicePayments } from "./ServicePayments.style";
+import { servicePaymentsData } from "./Transfers.data";
+import { SCServicePayments } from "./TransfersElems.style";
 
 export const ServicePayments = () => {
   return (

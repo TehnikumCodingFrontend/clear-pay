@@ -11,7 +11,7 @@ export const Input = styled.input<Partial<IInputProps>>`
     ${(props) => (props.$borderColor ? props.$borderColor : "transparent")};
   border-radius: 10px;
   padding: 14px 20px;
-  padding-right: 60px;
+  padding-right: 40px;
 
   background-color: ${(props) =>
     props.$bgc ? props.$bgc : props.theme.colors.bgc};
@@ -56,9 +56,11 @@ export const InputWrapper = styled.div<IInputProps>`
   .inputIcon {
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 10px;
     translate: 0 -50%;
+
     svg {
+      width: 23px;
       fill: ${(props) => props.theme.colors.placeholderColor};
     }
   }

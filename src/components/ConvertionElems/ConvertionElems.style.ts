@@ -1,15 +1,11 @@
 import styled from "styled-components";
 import { SCAppWidget } from "../../theme/globalStyle";
 
-export const RateWrapper = styled.div`
+export const SCExchangeRate = styled.div`
   flex: 1 1 auto;
 `;
 
-export const SCExchangeRate = styled(SCAppWidget)`
-  .table {
-    margin-bottom: 30px;
-  }
-
+export const SCExchangeTable = styled(SCAppWidget)`
   .line {
     width: 100%;
 
@@ -28,9 +24,20 @@ export const SCExchangeRate = styled(SCAppWidget)`
     }
   }
 
-  .rate {
-    flex: 1 1;
+  .cell {
+    flex: 1 1 auto;
     text-align: center;
+  }
+
+  .AppElem {
+    .AppImage {
+      height: calc(1.9vw + 23px); //? 60 | 30
+      width: calc(1.9vw + 23px); //? 60 | 30
+    }
+  }
+
+  .AppLink {
+    margin-top: 30px;
   }
 `;
 
@@ -38,19 +45,24 @@ export const CalculatorWrapper = styled.div`
   flex: 0 1 35%;
   position: relative;
 
-  button {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 
+  h1 {
+    margin: 0;
+  }
+
+  button {
     border-radius: 16px;
   }
 `;
 
 export const SCExchangeCalculator = styled(SCAppWidget)`
+  flex: 1 1 auto;
+
   h5 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .wannaSell {

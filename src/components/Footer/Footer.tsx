@@ -8,6 +8,13 @@ export const Footer = () => {
     <SCFooter>
       <div className="supportService">
         <AppIcon
+          className="logo logo_small"
+          name="clear-pay-logo_small"
+          width="36"
+          height="36"
+          fill="white"
+        />
+        <AppIcon
           className="logo"
           name="clear-pay-logo"
           width="232"

@@ -1,14 +1,14 @@
-// @ts-nocheck
+//@ts-nocheck
 
 import React from "react";
 import { Swiper, useSwiper } from "swiper/react";
 import { SwiperOptions } from "swiper/types";
 import { colors } from "../../../theme/colors";
 import { AppIcon } from "../AppIcon/AppIcon";
-import { SlidesWrapper } from "../../ServicePayments/ServicePayments.style";
+import { SlidesWrapper } from "../../TransfersElems/TransfersElems.style";
 
 interface IAppSwiperProps extends SwiperOptions {
-  children: React.ReactNode;
+  children: React.ReactNode[];
 }
 
 export const AppSwiper: React.FC<IAppSwiperProps> = ({
@@ -19,7 +19,8 @@ export const AppSwiper: React.FC<IAppSwiperProps> = ({
 
   return (
     <Swiper {...swiperParams}>
-      <SlidesWrapper>{children}</SlidesWrapper>
+      {children}
+      {/* <SlidesWrapper>{children}</SlidesWrapper> */}
       {/* <AppIcon
         className="nextSlideBtn _noSelect"
         name="slider-right"

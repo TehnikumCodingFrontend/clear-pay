@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   cursor: pointer;
-  padding: 23px 30px;
+  padding: 18px 25px;
   background-color: ${(props) => props.theme.colors.primeColor};
   color: white;
   transition: 200ms;

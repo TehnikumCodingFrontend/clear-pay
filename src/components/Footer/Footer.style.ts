@@ -1,17 +1,22 @@
 import styled from "styled-components";
 
-export const SCFooter = styled.div`
+export const SCFooter = styled.footer`
   position: relative;
   z-index: 100;
 
   background-color: ${(props) => props.theme.colors.footerBgc};
   color: ${(props) => props.theme.colors.invertedTextColor};
-  padding: 100px;
+  /* padding: 100px; */
+  padding: 50px;
 
   flex: 0 1 auto;
 
   display: flex;
   gap: 100px;
+
+  .logo_small {
+    align-self: flex-start;
+  }
 
   .supportService {
     display: flex;

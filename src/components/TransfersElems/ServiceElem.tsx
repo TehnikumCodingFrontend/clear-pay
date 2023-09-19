@@ -1,6 +1,6 @@
 import { colors } from "../../theme/colors";
 import { AppIcon } from "../UI/AppIcon/AppIcon";
-import { SCServiceElem } from "./ServiceElem.style";
+import { SCServiceElem } from "./TransfersElems.style";
 
 interface IServiceElemProps {
   serviceTitle: string;

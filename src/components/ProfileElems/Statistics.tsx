@@ -1,7 +1,5 @@
-import React from "react";
-import { SCStatistics } from "./ProfileElems.style";
 import { statisticsData } from "./ProfileElems.data";
-import { CountElem } from "./CountElem";
+import { SCCountElem, SCStatistics } from "./ProfileElems.style";
 
 interface IStatisticsProps {}
 
@@ -11,7 +9,10 @@ export const Statistics = ({}: IStatisticsProps) => {
       <h5>Статистика за месяц</h5>
       <div className="countsWrapper">
         {statisticsData.map((data) => (
-          <CountElem count={data.count} countDescription={data.description} />
+          <SCCountElem key={data.description}>
+            <p className="count">{data.count}</p>
+            <p className="countDescription">{data.description}</p>
+          </SCCountElem>
         ))}
       </div>
     </SCStatistics>

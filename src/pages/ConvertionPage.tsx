@@ -1,7 +1,8 @@
 import { ExchangeCalculator } from "../components/ConvertionElems/ExchangeCalculator";
 import { ExchangeRate } from "../components/ConvertionElems/ExchangeRate";
-import { Enrollment } from "../components/TransferElems/Enrollment";
-import { TransferElem } from "../components/TransferElems/TransferElem";
+import { TransfersHistory } from "../components/ProfileElems/TransfersHistory";
+import { Enrollment } from "../components/TransfersElems/Enrollment";
+import { TransferElem } from "../components/TransfersElems/TransferElem";
 import { PageElemsWrapper } from "../theme/globalStyle";
 
 export const ConvertionPage = () => {

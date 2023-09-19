@@ -41,11 +41,4 @@ export const footerData = [
       { title: "ТВ и связь", path: "/" },
     ],
   },
-  {
-    title: "Служба поддержки:",
-    links: [
-      { title: "+998 90 123 45 67", path: "/" },
-      { title: "+998 99 123 45 67", path: "/" },
-    ],
-  },
 ];

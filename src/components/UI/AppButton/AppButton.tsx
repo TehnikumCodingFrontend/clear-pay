@@ -7,12 +7,12 @@ export interface IButtonProps {
 }
 
 export const AppButton = ({
-  buttonLabel = "Перевести",
+  buttonLabel,
   isDisabled,
   ...props
 }: IButtonProps) => {
   return (
-    <Button disabled={isDisabled} {...props}>
+    <Button className="AppButton" disabled={isDisabled} {...props}>
       {buttonLabel}
     </Button>
   );

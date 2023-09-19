@@ -1,6 +1,6 @@
-import { ServicePayments } from "../components/ServicePayments/ServicePayments";
-import { RecentTransfers } from "../components/TransferElems/RecentTransfers";
-import { TransferBlock } from "../components/TransferElems/TransferBlock";
+import { ServicePayments } from "../components/TransfersElems/ServicePayments";
+import { RecentTransfers } from "../components/TransfersElems/RecentTransfers";
+import { TransferBlock } from "../components/TransfersElems/TransferBlock";
 import { PageElemsWrapper } from "../theme/globalStyle";
 
 export const TransfersPage = () => {

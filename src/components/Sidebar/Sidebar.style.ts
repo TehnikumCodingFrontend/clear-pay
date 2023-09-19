@@ -23,6 +23,14 @@ export const SCSidebar = styled.nav`
   padding: 30px 40px;
   padding-right: 0;
 
+  .logo {
+    margin-bottom: 120px;
+  }
+
+  .logo_small {
+    margin-bottom: 60px;
+  }
+
   ul {
     display: flex;
     flex-direction: column;
@@ -68,37 +76,20 @@ export const SCSidebar = styled.nav`
     }
   }
 
-  .logo,
-  .logo_small {
-    cursor: pointer;
-    display: inline-block;
-    margin-bottom: 120px;
-    transition: 200ms;
+  @media ${(props) => props.theme.devices.laptop} {
+    width: fit-content;
+    padding: 30px 20px;
 
-    &:hover {
-      filter: drop-shadow(0 0 3px ${(props) => props.theme.colors.white});
-    }
-  }
-
-  .logo_small {
-    display: none;
-    padding: 10px;
-    margin-bottom: 60px;
-    background-color: white;
-    border-radius: 10px;
-  }
-
-  @media (max-width: 1230px) {
-    .logo {
-      display: none;
-    }
-
-    .logo_small {
-      display: inline-block;
+    a {
+      border-radius: 10px;
     }
 
     .route {
       display: none;
     }
   }
+
+  /* @media ${(props) => props.theme.devices.tablet} {
+    display: none;
+  } */
 `;
